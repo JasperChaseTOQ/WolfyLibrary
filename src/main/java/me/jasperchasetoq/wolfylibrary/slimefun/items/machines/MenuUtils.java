@@ -1,4 +1,4 @@
-package me.wolfylibrary.slimefun.utils.items.machines;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.machines;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
