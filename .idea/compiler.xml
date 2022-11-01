@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="WolfyLibrary" target="16" />
+      <module name="WolfyLibrary" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
