@@ -15,7 +15,7 @@ public final class MenuUtils {
 
     //currently plan to use
 
-    private static final ItemStack WOLFY_MACHINE_MENU_BACKGROUND = new SlimefunItemStack("JC_MACHINE_MENU_BACKGROUND", Material.LIGHT_GRAY_STAINED_GLASS_PANE, " ");
+    private static final ItemStack WOLFY_MACHINE_MENU_BACKGROUND = new SlimefunItemStack("JC_MACHINE_MENU_BACKGROUND", Material.GRAY_STAINED_GLASS_PANE, " ");
     private static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_ONE = new SlimefunItemStack("JC_MACHINE_MENU_INPUT_BORDER_ONE", Material.CYAN_STAINED_GLASS_PANE, " ");
     private static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_TWO = new SlimefunItemStack("JC_MACHINE_MENU_INPUT_BORDER_TWO", Material.CYAN_STAINED_GLASS_PANE, " ");
     private static final ItemStack WOLFY_MACHINE_MENU_OUTPUT_BORDER_ONE = new SlimefunItemStack("JC_MACHINE_MENU_OUTPUT_BORDER_ONE", Material.ORANGE_STAINED_GLASS_PANE, " ");
