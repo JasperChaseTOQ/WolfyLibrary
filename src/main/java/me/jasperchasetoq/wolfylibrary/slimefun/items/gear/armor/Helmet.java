@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Helmet extends Gear implements NotPlaceable {
+public class Helmet extends Armor {
 
     @ParametersAreNonnullByDefault
     public Helmet(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {

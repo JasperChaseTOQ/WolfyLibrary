@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Hoe extends Gear implements NotPlaceable {
+public class Hoe extends Tool implements NotPlaceable {
 
     @ParametersAreNonnullByDefault
     public Hoe(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {

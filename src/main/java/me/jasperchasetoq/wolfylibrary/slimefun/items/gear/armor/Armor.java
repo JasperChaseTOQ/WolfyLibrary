@@ -1,4 +1,4 @@
-package me.jasperchasetoq.wolfylibrary.slimefun.items.gear.tools;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.gear.armor;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -9,10 +9,10 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Pickaxe extends Tool implements NotPlaceable {
+public class Armor extends Gear {
 
     @ParametersAreNonnullByDefault
-    public Pickaxe(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    public Armor(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 

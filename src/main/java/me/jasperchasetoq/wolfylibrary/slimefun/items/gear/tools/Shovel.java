@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Shovel extends Gear implements NotPlaceable {
+public class Shovel extends Tool implements NotPlaceable {
 
     @ParametersAreNonnullByDefault
     public Shovel(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
