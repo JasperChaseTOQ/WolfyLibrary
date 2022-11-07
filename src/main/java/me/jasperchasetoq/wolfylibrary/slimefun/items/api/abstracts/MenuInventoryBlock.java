@@ -1,4 +1,4 @@
-package me.jasperchasetoq.wolfylibrary.slimefun.items.machines;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.api.abstracts;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -6,9 +6,10 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.inventory.ItemStack;
 
-public class MachineMenu extends SlimefunItem {
+public class MenuInventoryBlock extends SlimefunItem {
 
-    public MachineMenu(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+
+    public MenuInventoryBlock(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 }
