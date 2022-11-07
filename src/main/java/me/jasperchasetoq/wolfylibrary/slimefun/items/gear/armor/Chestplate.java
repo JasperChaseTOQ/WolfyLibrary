@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Chestplate extends Gear implements NotPlaceable {
+public class Chestplate extends Armor {
 
     @ParametersAreNonnullByDefault
     public Chestplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {

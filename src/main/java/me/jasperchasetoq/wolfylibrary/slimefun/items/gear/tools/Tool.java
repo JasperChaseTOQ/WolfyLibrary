@@ -9,10 +9,10 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Pickaxe extends Tool implements NotPlaceable {
+public class Tool extends Gear implements NotPlaceable {
 
     @ParametersAreNonnullByDefault
-    public Pickaxe(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    public Tool(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 

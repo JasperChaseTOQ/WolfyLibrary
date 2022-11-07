@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Bow extends Gear implements NotPlaceable {
+public class Bow extends Weapon {
 
     @ParametersAreNonnullByDefault
     public Bow(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {

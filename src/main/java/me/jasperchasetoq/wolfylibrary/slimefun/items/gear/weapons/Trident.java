@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class Trident extends Gear implements NotPlaceable {
+public class Trident extends Weapon {
 
     @ParametersAreNonnullByDefault
     public Trident(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
