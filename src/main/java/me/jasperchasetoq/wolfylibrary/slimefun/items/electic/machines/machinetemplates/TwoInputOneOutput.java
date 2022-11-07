@@ -1,4 +1,4 @@
-package me.jasperchasetoq.wolfylibrary.slimefun.items.machines.layouts;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.electic.machines.machinetemplates;
 
 public class TwoInputOneOutput {
 
