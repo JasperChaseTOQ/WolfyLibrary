@@ -1,4 +1,4 @@
-package me.jasperchasetoq.wolfylibrary.slimefun.items.misc;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.general;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -8,10 +8,10 @@ import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class MetalIngot extends SlimefunItem {
+public class MetalAlloy extends SlimefunItem {
 
     @ParametersAreNonnullByDefault
-    public MetalIngot(ItemGroup itemGroup, SlimefunItemStack item, ItemStack[] recipe) {
+    public MetalAlloy(ItemGroup itemGroup, SlimefunItemStack item, ItemStack[] recipe) {
         super(itemGroup, item, RecipeType.SMELTERY, recipe);
     }
 
