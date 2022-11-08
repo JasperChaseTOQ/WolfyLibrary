@@ -1,4 +1,4 @@
-package me.jasperchasetoq.wolfylibrary.slimefun.items.misc;
+package me.jasperchasetoq.wolfylibrary.slimefun.items.general;
 
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
