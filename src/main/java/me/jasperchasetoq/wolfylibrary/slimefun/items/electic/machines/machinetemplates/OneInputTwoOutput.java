@@ -15,6 +15,7 @@ import javax.annotation.Nonnull;
 @SuppressWarnings("deprecation")
 public class OneInputTwoOutput {
 
+    //Inventory Menu Slots
     private static final int[] FIRST_INPUT_BORDER = {3, 4, 5, 12, 14, 21, 22, 23};
     private static final int[] FIRST_OUTPUT_BORDER = {27, 28, 29, 36, 38, 45, 46, 47};
     private static final int[] SECOND_OUTPUT_BORDER = {33, 34, 35, 42, 44, 51, 52, 53};
@@ -30,6 +31,12 @@ public class OneInputTwoOutput {
     }
     public int[] getSecondOutputSlot() {
         return new int[] {43};
+    }
+    public int[] getInputSlots() {
+        return new int[] {0};
+    }
+    public int[] getOutputSlots() {
+        return new int[] {0};
     }
 
     protected void constructMenu(@Nonnull BlockMenuPreset preset) {
