@@ -18,5 +18,10 @@ public class TwoInputOneOutput {
     public int[] getFirstOutputSlot() {
         return new int[] {40};
     }
-
+    public int[] getInputSlots() {
+        return new int[] {0};
+    }
+    public int[] getOutputSlots() {
+        return new int[] {0};
+    }
 }
