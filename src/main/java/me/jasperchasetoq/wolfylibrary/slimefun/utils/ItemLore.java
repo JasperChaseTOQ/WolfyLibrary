@@ -20,8 +20,8 @@ public class ItemLore {
     public static @Nonnull String machine(@Nonnull MachineLevel level, @Nonnull MachineType type) {
         return level + "" + type;
     }
-    public static @Nonnull String speedEnhancements(int speedEnhancements) {
-        return ("&6⚡ &7"+ speedEnhancements+ "&7x");
+    public static @Nonnull String speed(int speed) {
+        return ("&6⚡ &7"+ speed+ "&7x");
     }
 
 }
