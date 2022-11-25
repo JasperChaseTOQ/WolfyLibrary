@@ -65,16 +65,16 @@ public class OneInputTwoOutput extends AContainer {
     //Construct the inventory menu
     protected void constructMenu(@Nonnull BlockMenuPreset preset) {
         for (int i : BACKGROUND) {
-            preset.addItem(i, MenuUtils.getWolfyMachineMenuBackgroundTile(), ChestMenuUtils.getEmptyClickHandler());
+            preset.addItem(i, MenuUtils.getWolfyMachineMenuBackgroundBorder(), ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : FIRST_INPUT_BORDER) {
-            preset.addItem(i, MenuUtils.getWolfyMachineMenuInputOneTile(), ChestMenuUtils.getEmptyClickHandler());
+            preset.addItem(i, MenuUtils.getWolfyMachineMenuInputOneBorder(), ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : FIRST_OUTPUT_BORDER) {
-            preset.addItem(i, MenuUtils.getWolfyMachineMenuOutputOneTile(), ChestMenuUtils.getEmptyClickHandler());
+            preset.addItem(i, MenuUtils.getWolfyMachineMenuOutputOneBorder(), ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : SECOND_OUTPUT_BORDER) {
-            preset.addItem(i, MenuUtils.getWolfyMachineMenuInputTwoTile(), ChestMenuUtils.getEmptyClickHandler());
+            preset.addItem(i, MenuUtils.getWolfyMachineMenuInputTwoBorder(), ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : getFirstOutputSlot()) {
 
