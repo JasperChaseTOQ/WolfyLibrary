@@ -16,16 +16,16 @@ import java.util.List;
 
 public class MenuInventoryBlock extends SlimefunItem {
 
-    public static final ItemStack WOLFY_MACHINE_MENU_BACKGROUND = MenuUtils.getWolfyMachineMenuBackgroundTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_ONE = MenuUtils.getWolfyMachineMenuInputOneTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_TWO = MenuUtils.getWolfyMachineMenuInputTwoTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_OUTPUT_BORDER_ONE = MenuUtils.getWolfyMachineMenuOutputOneTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_OUTPUT_BORDER_TWO = MenuUtils.getWolfyMachineMenuOutputTwoTile();
+    public static final ItemStack WOLFY_MACHINE_MENU_BACKGROUND = MenuUtils.getWolfyMachineMenuBackgroundBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_ONE = MenuUtils.getWolfyMachineMenuInputOneBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_INPUT_BORDER_TWO = MenuUtils.getWolfyMachineMenuInputTwoBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_OUTPUT_BORDER_ONE = MenuUtils.getWolfyMachineMenuOutputOneBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_OUTPUT_BORDER_TWO = MenuUtils.getWolfyMachineMenuOutputTwoBorder();
 
     //for future plans
-    public static final ItemStack WOLFY_MACHINE_MENU_POWER_BUTTON = MenuUtils.getWolfyMachineMenuPowerButtonTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_POWER_STATUS = MenuUtils.getWolfyMachineMenuPowerStatusTile();
-    public static final ItemStack WOLFY_MACHINE_MENU_TRANSPORT_PORT = MenuUtils.getWolfyMachineMenuTransportPortTile();
+    public static final ItemStack WOLFY_MACHINE_MENU_POWER_BUTTON = MenuUtils.getWolfyMachineMenuPowerButtonBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_POWER_STATUS = MenuUtils.getWolfyMachineMenuPowerStatusBorder();
+    public static final ItemStack WOLFY_MACHINE_MENU_TRANSPORT_PORT = MenuUtils.getWolfyMachineMenuTransportPortBorder();
 
     public MenuInventoryBlock(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
