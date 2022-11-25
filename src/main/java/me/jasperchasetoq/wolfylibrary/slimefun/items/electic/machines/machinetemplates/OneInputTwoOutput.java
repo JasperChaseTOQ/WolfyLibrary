@@ -67,19 +67,15 @@ public class OneInputTwoOutput extends AContainer {
         for (int i : BACKGROUND) {
             preset.addItem(i, MenuUtils.getWolfyMachineMenuBackgroundTile(), ChestMenuUtils.getEmptyClickHandler());
         }
-
         for (int i : FIRST_INPUT_BORDER) {
             preset.addItem(i, MenuUtils.getWolfyMachineMenuInputOneTile(), ChestMenuUtils.getEmptyClickHandler());
         }
-
         for (int i : FIRST_OUTPUT_BORDER) {
             preset.addItem(i, MenuUtils.getWolfyMachineMenuOutputOneTile(), ChestMenuUtils.getEmptyClickHandler());
         }
-
         for (int i : SECOND_OUTPUT_BORDER) {
             preset.addItem(i, MenuUtils.getWolfyMachineMenuInputTwoTile(), ChestMenuUtils.getEmptyClickHandler());
         }
-
         for (int i : getFirstOutputSlot()) {
 
             preset.addMenuClickHandler(i, new ChestMenu.AdvancedMenuClickHandler() {
