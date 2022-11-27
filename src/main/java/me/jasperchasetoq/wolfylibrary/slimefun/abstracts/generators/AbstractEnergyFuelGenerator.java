@@ -38,7 +38,7 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
     private static final int[] FUEL_BORDER = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44};
     private final MachineProcessor<FuelOperation> processingFuel = new MachineProcessor<>(this);
     private int EnergyGenerated = -1;
-    private int EnergyStorage = -1;
+    private int EnergyCapacity = -1;
 
     @ParametersAreNonnullByDefault
     protected AbstractEnergyFuelGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -74,18 +74,18 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
     public int[] getFuelSlot() {
         return new int[] {22};
     }
-    public int getEnergyStorage() {
-        return EnergyStorage;
+    public int getCapacity() {
+        return EnergyCapacity;
     }
     @Override
     public int getEnergyProduction() {
         return EnergyGenerated;
     }
-    public final AbstractEnergyFuelGenerator setEnergyStorage(int storage) {
+    public final AbstractEnergyFuelGenerator setCapacity(int storage) {
         Validate.isTrue(storage >= 0, "The storage must be positive");
 
         if (getState() == ItemState.UNREGISTERED) {
-            this.EnergyStorage = storage;
+            this.EnergyCapacity = storage;
             return this;
 
         } else {
@@ -107,7 +107,7 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
                 processingFuel.updateProgressBar(menu, 4, fuelConsumption);
                 if (isChargeable()) {
                     int storedEnergy = getCharge(location, config);
-                    if (getEnergyStorage() - storedEnergy >= getEnergyProduction()) {
+                    if (getCapacity() - storedEnergy >= getEnergyProduction()) {
                         fuelConsumption.addProgress(1);
                         return getEnergyProduction();
                     }
@@ -143,6 +143,14 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
         }
         return null;
     }
+    @Override
+    public int[] getInputSlots() {
+        return new int[] {22};
+    }
+    @Override
+    public int[] getOutputSlots() {
+        return new int[] {0};
+    }
     protected void constructMenu(@Nonnull BlockMenuPreset preset) {
         for (int i : BACKGROUND) {
             preset.addItem(i, MenuUtils.getWolfyFuelGeneratorMenuBackground(), ChestMenuUtils.getEmptyClickHandler());
@@ -167,15 +175,15 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
     @Override
     public void register(@Nonnull SlimefunAddon addon) {
         this.addon = addon;
-        if (getEnergyStorage() < 0) {
+        if (getCapacity() < 0) {
             warn("Energy storage has been set up incorrectly");
-            warn("Make sure to correctly setup  '" + getClass().getSimpleName() + "#setEnergyStorage(...)'");
+            warn("Make sure to correctly setup  '" + getClass().getSimpleName() + "#setEnergyCapacity(...)'");
         }
         if (getEnergyProduction() <= 0) {
             warn("Energy storage has been set up incorrectly");
             warn("Make sure to correctly setup '" + getClass().getSimpleName() + "#setEnergyProduction(...)'");
         }
-        if (getEnergyStorage() >= 0 && getEnergyProduction() > 0) {
+        if (getCapacity() >= 0 && getEnergyProduction() > 0) {
             super.register(addon);
         }
     }
