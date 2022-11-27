@@ -92,7 +92,12 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
             throw new IllegalStateException("You cannot edit the storage after the generator was setup.");
         }
     }
+    public final AbstractEnergyFuelGenerator setEnergyProduction(int EnergyProduced) {
+        Validate.isTrue(EnergyProduced > 0, "energy must be produced.");
 
+        this.EnergyGenerated = EnergyProduced;
+        return this;
+    }
     @Override
     public int getGeneratedOutput(Location location, Config config) {
         BlockMenu menu = BlockStorage.getInventory(location);
@@ -163,11 +168,11 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
     public void register(@Nonnull SlimefunAddon addon) {
         this.addon = addon;
         if (getEnergyStorage() < 0) {
-            warn("Energy storage has not been setup properly. The setup was canceled");
+            warn("Energy storage has been set up incorrectly");
             warn("Make sure to correctly setup  '" + getClass().getSimpleName() + "#setEnergyStorage(...)'");
         }
         if (getEnergyProduction() <= 0) {
-            warn("The energy production has not been setup properly. The setup was canceled");
+            warn("Energy storage has been set up incorrectly");
             warn("Make sure to correctly setup '" + getClass().getSimpleName() + "#setEnergyProduction(...)'");
         }
         if (getEnergyStorage() >= 0 && getEnergyProduction() > 0) {
