@@ -147,7 +147,6 @@ public abstract class AbstractEnergyFuelGenerator extends AbstractEnergyProvider
     public int[] getInputSlots() {
         return new int[] {22};
     }
-
     @Override
     public int[] getOutputSlots() {
         return new int[] {0};
